@@ -8,7 +8,7 @@ public enum ColorType
     Red,
     Blue,
     Green,
-    Pink,
+    Orange,
     Any,
     Count
 };
@@ -20,16 +20,38 @@ public struct ColorSprite
 };
 public class ColorPiece : MonoBehaviour
 {
-    public ColorSprite colorSprites;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public ColorSprite[] colorSprites;
 
-    // Update is called once per frame
-    void Update()
+    private ColorType color;
+    public ColorType Color
     {
-        
+        get { return color; }
+        set { SetColor(value); }
+    }
+    public int NumColors
+    {
+        get { return colorSprites.Length; }
+    }
+    private SpriteRenderer sprite;
+    private Dictionary<ColorType, Sprite> colorSpritesDict;
+    private void Awake()
+    {
+        sprite = GetComponentInChildren<SpriteRenderer>();
+        colorSpritesDict = new Dictionary<ColorType, Sprite>();
+        foreach (var sprite in colorSprites)
+        {
+            if (!colorSpritesDict.ContainsKey(sprite.color))
+            {
+                colorSpritesDict.Add(sprite.color, sprite.sprite);
+            }
+        }
+    }
+    public void SetColor(ColorType newColor)
+    {
+        color = newColor;
+        if (colorSpritesDict.ContainsKey(newColor))
+        {
+            sprite.sprite = colorSpritesDict[newColor];
+        }
     }
 }
