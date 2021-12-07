@@ -43,20 +43,7 @@ public class Grid : MonoBehaviour
         {
             for (int j = 0; j < yDim; j++)
             {
-                GameObject newPiece = Instantiate(PiecePrefabDict[PieceType.Normal], Vector2.zero, Quaternion.identity, transform);
-                newPiece.name = $"Piece({i},{j})";
-                
-                pieces[i, j] = newPiece.GetComponent<GamePiece>();
-                pieces[i, j].Init(i, j, this, PieceType.Normal);
-
-                if (pieces[i, j].IsMovable())
-                {
-                    pieces[i,j].MovableComponent.Move(i, j);
-                }
-                if (pieces[i, j].IsColored())
-                {
-                    pieces[i, j].ColorComponent.SetColor((ColorType)Random.Range(0, pieces[i,j].ColorComponent.NumColors));
-                }
+                SpawnNewPiece(i, j, PieceType.Empty);
             }
         }
 
@@ -64,5 +51,42 @@ public class Grid : MonoBehaviour
     public Vector2 GetWorldPosition(int x, int y)
     {
         return new Vector2(transform.position.x - xDim / 2.0f + x, transform.position.y + yDim / 2.0f - y);
+    }
+
+    public GamePiece SpawnNewPiece(int x, int y, PieceType type)
+    {
+        GameObject newPiece = Instantiate(PiecePrefabDict[type], GetWorldPosition(x, y), Quaternion.identity, transform);
+        pieces[x, y] = newPiece.GetComponent<GamePiece>();
+        pieces[x,y].Init(x, y, this, type);
+        return pieces[x, y];
+    }
+
+    public void Fill()
+    {
+
+    }
+    public bool FillStep()
+    {
+        bool movedPiece = false;
+        for (int y = yDim-2; y >=0; y--)
+        {
+            for (int x = 0; x < xDim; x++)
+            {
+                GamePiece piece = pieces[x, y];
+                if (piece.IsMovable())
+                {
+                    GamePiece pieceBelow = pieces[x, y+1];
+                    if(pieceBelow.Type == PieceType.Empty)
+                    {
+                        piece.MovableComponent.Move(x, y+1);
+                        pieces[x, y + 1] = piece;
+                        SpawnNewPiece(x, y, PieceType.Empty);
+                        movedPiece = true;
+                    }
+                }
+            }
+        }
+        return movedPiece;
+
     }
 }
