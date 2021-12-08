@@ -34,7 +34,7 @@ public class Level : MonoBehaviour
     public virtual void GameLose()
     {
         Debug.Log("you lose.");
-        hud.OnGameLose();
+        hud.OnGameLose(currentScore);
         grid.GameOver();
     }
     public virtual void OnMove()

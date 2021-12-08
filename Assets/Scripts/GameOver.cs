@@ -8,7 +8,6 @@ using UnityEngine.UI;
 public class GameOver : MonoBehaviour
 {
     public Animator animator;
-    public Animation gameOverShow;
 
     public GameObject screenParent;
     public GameObject scoreParent;
@@ -41,7 +40,7 @@ public class GameOver : MonoBehaviour
 
         if (animator)
         {
-            animator.Play(gameOverShow.name);
+            animator.Play("GameOverShow");
         }
         StartCoroutine(ShowStartsCorutine(starCount));
     }
@@ -57,7 +56,7 @@ public class GameOver : MonoBehaviour
 
         if (animator)
         {
-            animator.Play(gameOverShow.name);
+            animator.Play("GameOverShow");
         }
         StartCoroutine(ShowStartsCorutine(starCount));
     }
@@ -82,7 +81,7 @@ public class GameOver : MonoBehaviour
     }
     public void OnDoneClicked()
     {
-
+        SceneManager.LoadScene(0);
     }
     public void OnNextLevelClicked()
     {

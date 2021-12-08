@@ -6,17 +6,21 @@ using TMPro;
 public class HUD : MonoBehaviour
 {
     public Level level;
+
     public TMP_Text remainingText;
     public TMP_Text remainingSubText;
     public TMP_Text targetText;
     public TMP_Text targetSubText;
     public TMP_Text scoreText;
     public TMP_Text scoreSubText;
+
     public GameObject[] stars;
 
+    public GameOver gameOver;
+
     private int starIdx = 0;
-    private bool isGameOver = false;
-    void Start()
+
+    private void Start()
     {
         for (int i = 0; i < stars.Length; i++)
         {
@@ -92,10 +96,10 @@ public class HUD : MonoBehaviour
 
     public void OnGameWin(int score)
     {
-        isGameOver = true;
+        gameOver.ShowWin(score, starIdx);
     }
-    public void OnGameLose()
+    public void OnGameLose(int score)
     {
-        isGameOver = true;
+        gameOver.ShowLose(score, starIdx);
     }
 }
