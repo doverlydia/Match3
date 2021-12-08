@@ -72,15 +72,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: cd198831b51c4a5449e3c9b363e45a8f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7dba084242cc95e428a5e561f80f857f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 1.1377778, y: 1.1377778}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &8298937175943585590
@@ -93,8 +93,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8804522986469024390}
   - component: {fileID: 5249255249082261040}
+  - component: {fileID: 3490968469838432064}
   m_Layer: 0
-  m_Name: boxPiece
+  m_Name: IcePiece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,3 +128,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba49b6e99985e204ca804c7998b38606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &3490968469838432064
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8298937175943585590}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e8a9630218180f4f8ecad1ddd155e3e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

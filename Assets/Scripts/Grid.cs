@@ -6,7 +6,7 @@ public enum PieceType
 {
     Empty,
     Normal,
-    Box,
+    Ice,
     Count
 }
 
@@ -67,25 +67,25 @@ public class Grid : MonoBehaviour
         }
 
         Destroy(pieces[1, 4].gameObject);
-        SpawnNewPiece(1, 4, PieceType.Box);
+        SpawnNewPiece(1, 4, PieceType.Ice);
 
         Destroy(pieces[2, 4].gameObject);
-        SpawnNewPiece(2, 4, PieceType.Box);
+        SpawnNewPiece(2, 4, PieceType.Ice);
 
         Destroy(pieces[3, 4].gameObject);
-        SpawnNewPiece(3, 4, PieceType.Box);
+        SpawnNewPiece(3, 4, PieceType.Ice);
 
         Destroy(pieces[5, 4].gameObject);
-        SpawnNewPiece(5, 4, PieceType.Box);
+        SpawnNewPiece(5, 4, PieceType.Ice);
 
         Destroy(pieces[6, 4].gameObject);
-        SpawnNewPiece(6, 4, PieceType.Box);
+        SpawnNewPiece(6, 4, PieceType.Ice);
 
         Destroy(pieces[7, 4].gameObject);
-        SpawnNewPiece(7, 4, PieceType.Box);
+        SpawnNewPiece(7, 4, PieceType.Ice);
 
         Destroy(pieces[4, 0].gameObject);
-        SpawnNewPiece(4, 0, PieceType.Box);
+        SpawnNewPiece(4, 0, PieceType.Ice);
 
         StartCoroutine(Fill());
     }
