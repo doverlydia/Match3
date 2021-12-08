@@ -89,9 +89,9 @@ public class GameOver : MonoBehaviour
     }
     public void OnNextLevelClicked()
     {
-        if (SceneManager.sceneCount - 1 <= SceneManager.GetActiveScene().buildIndex + 1)
+        if (SceneManager.GetActiveScene().buildIndex + 1 < SceneManager.sceneCountInBuildSettings)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         else
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
     }
 }

@@ -511,22 +511,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 619564903, guid: bb3cc89063c6bf94c9d29a3198f7ef1e, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -16.499992
-      objectReference: {fileID: 0}
-    - target: {fileID: 1125934194, guid: bb3cc89063c6bf94c9d29a3198f7ef1e, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 9.5
-      objectReference: {fileID: 0}
     - target: {fileID: 1875691359, guid: bb3cc89063c6bf94c9d29a3198f7ef1e, type: 3}
       propertyPath: level
       value: 
       objectReference: {fileID: 1802598377}
-    - target: {fileID: 1875691359, guid: bb3cc89063c6bf94c9d29a3198f7ef1e, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8274929719331804789, guid: bb3cc89063c6bf94c9d29a3198f7ef1e, type: 3}
       propertyPath: m_Name
       value: UICanvas
