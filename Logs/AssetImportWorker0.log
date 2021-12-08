@@ -15,11 +15,11 @@ C:/Users/dover/Pikoya_InternAssignment
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51547
+65243
 Successfully changed project path to: C:/Users/dover/Pikoya_InternAssignment
 C:/Users/dover/Pikoya_InternAssignment
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 49.72 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 53.41 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.1f1 (6fdc41dfa55a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.1f1/Editor/Data/Resources/UnitySubsystems
@@ -35,61 +35,313 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56540
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.1f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002316 seconds.
+Registered in 0.002687 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 44.94 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 48.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.956 seconds
+- Completed reload, in  2.327 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004041 seconds.
+Registered in 0.004424 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 46.42 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 50.49 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.148 seconds
+- Completed reload, in  1.314 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2321 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 101.0 MB.
-System memory in use after: 101.2 MB.
+Unloading 2320 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.9 MB.
+System memory in use after: 101.0 MB.
 
-Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 2756.
-Total: 2.368300 ms (FindLiveObjects: 0.191000 ms CreateObjectMapping: 0.130100 ms MarkObjects: 1.994700 ms  DeleteObjects: 0.051500 ms)
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 2755.
+Total: 2.579200 ms (FindLiveObjects: 0.274400 ms CreateObjectMapping: 0.132200 ms MarkObjects: 2.103900 ms  DeleteObjects: 0.067400 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Graphics/candy_110/bubble_pop_frame_02.png
-  artifactKey: Guid(a3158000633be47438f03a05282333a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Graphics/candy_110/bubble_pop_frame_02.png using Guid(a3158000633be47438f03a05282333a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e6c60d178397530fc60034d69b15d42') in 0.092644 seconds 
+  path: Assets/Graphics/candy_110/candy1_purple_01.png
+  artifactKey: Guid(0c650e9a914ac1d4b814ff43b10a014a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_purple_01.png using Guid(0c650e9a914ac1d4b814ff43b10a014a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b0bff703f4bcaa9bc7332048fd07e9') in 0.100847 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000431 seconds.
-  path: Assets/Graphics/candy_110/bubble_pop_frame_01.png
-  artifactKey: Guid(7dba084242cc95e428a5e561f80f857f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Graphics/candy_110/bubble_pop_frame_01.png using Guid(7dba084242cc95e428a5e561f80f857f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a6b6a87f1cfa0fe94bfd9c992289b56') in 0.012304 seconds 
+  Time since last request: 0.000442 seconds.
+  path: Assets/Graphics/candy_110/candy2_orange_02.png
+  artifactKey: Guid(5de16284931ccc645bcff69a7300c52f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_orange_02.png using Guid(5de16284931ccc645bcff69a7300c52f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd99da0994e499178f5cba6aa55865bb4') in 0.010847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000450 seconds.
+  path: Assets/Graphics/candy_110/candy1_yellow_03.png
+  artifactKey: Guid(81cd773194640e7418cabfddcda41317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_yellow_03.png using Guid(81cd773194640e7418cabfddcda41317) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f060a34623e1e2229237737f432f41fc') in 0.011595 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000326 seconds.
-  path: Assets/Graphics/candy_110/bubble_pop_frame_03.png
-  artifactKey: Guid(cb32a4ea9def1f94f84a83caa34b396f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Graphics/candy_110/bubble_pop_frame_03.png using Guid(cb32a4ea9def1f94f84a83caa34b396f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e84d494044c183a3bd2105ee9e5f8b0') in 0.014775 seconds 
+  path: Assets/Graphics/candy_110/candy1_blue_03.png
+  artifactKey: Guid(61dfd8aff86bd1d4d8f6c4a0d6cc916c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_blue_03.png using Guid(61dfd8aff86bd1d4d8f6c4a0d6cc916c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fee66bf05b490ac4b1598b5759e6f39d') in 0.011514 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000265 seconds.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Graphics/candy_110/candy2_blue_01.png
+  artifactKey: Guid(5eae8a509c30e4a4aabbb769594e55f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_blue_01.png using Guid(5eae8a509c30e4a4aabbb769594e55f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbbfb2c4c23e7f724ffb984525235963') in 0.013534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000375 seconds.
+  path: Assets/Graphics/candy_110/candy1_blue_01.png
+  artifactKey: Guid(7f71e024d9332c74a8d06cc9867f279b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_blue_01.png using Guid(7f71e024d9332c74a8d06cc9867f279b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f48f9506c7564aeb840ba95b2699c933') in 0.013003 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000437 seconds.
+  path: Assets/Graphics/candy_110/candy3_purple_03.png
+  artifactKey: Guid(04e6162fde12278438d4ae8fd912b879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy3_purple_03.png using Guid(04e6162fde12278438d4ae8fd912b879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6291ee5c74d3e9b4ae2724fa6b95c12') in 0.012247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000462 seconds.
+  path: Assets/Graphics/candy_110/candy1_orange_03.png
+  artifactKey: Guid(b6ea5f38ae3d4114984ed537d3f90bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_orange_03.png using Guid(b6ea5f38ae3d4114984ed537d3f90bea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbd34702a2116815be8a8c7faf5510b6') in 0.019809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000488 seconds.
+  path: Assets/Graphics/candy_110/ball1.png
+  artifactKey: Guid(af1a5a0fe0fa98c40827b6ec06676ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/ball1.png using Guid(af1a5a0fe0fa98c40827b6ec06676ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38f57d028e1c4c5b13c2f8d09d7c0808') in 0.014636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000409 seconds.
+  path: Assets/Graphics/candy_110/candy2_blue_03.png
+  artifactKey: Guid(980803cbf17440248b73048998cd8d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_blue_03.png using Guid(980803cbf17440248b73048998cd8d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95666d67aae7b548757bf22c3af5c031') in 0.012706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000422 seconds.
+  path: Assets/Graphics/candy_110/bubble_pop_frame_01.png
+  artifactKey: Guid(7dba084242cc95e428a5e561f80f857f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/bubble_pop_frame_01.png using Guid(7dba084242cc95e428a5e561f80f857f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca26000f3491bc34b867244421c252b0') in 0.015141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000411 seconds.
+  path: Assets/Graphics/candy_110/candy2_yellow_01.png
+  artifactKey: Guid(05c4bf0d026c78f41b9f4cc0c483cbd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_yellow_01.png using Guid(05c4bf0d026c78f41b9f4cc0c483cbd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df6107ca5e635dca38231c4e861501bb') in 0.020932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000547 seconds.
+  path: Assets/Graphics/candy_110/candy1_orange_01.png
+  artifactKey: Guid(08b7274c33e7c334fa9bdfdb8f6656d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_orange_01.png using Guid(08b7274c33e7c334fa9bdfdb8f6656d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72d13626fa30e5475dc7e4f9d6eaa7ae') in 0.015266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000552 seconds.
+  path: Assets/Graphics/candy_110/candy1_yellow_02.png
+  artifactKey: Guid(75bbe2c473a3ca9438f2d7f1091dfb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_yellow_02.png using Guid(75bbe2c473a3ca9438f2d7f1091dfb98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e77402333317d1ca2d4a34635db3e04') in 0.014127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/Graphics/candy_110/candy2_green_02.png
+  artifactKey: Guid(8550a4aff93a7e14e85631d452a5bbfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_green_02.png using Guid(8550a4aff93a7e14e85631d452a5bbfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '598b4af114a4acfa46c8fc0a19730bc2') in 0.019802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000457 seconds.
+  path: Assets/Graphics/candy_110/candy2_yellow_02.png
+  artifactKey: Guid(818654717b6407a44a20eb89af2529be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_yellow_02.png using Guid(818654717b6407a44a20eb89af2529be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '391e883dd6c61590605a2b11a2d3bb2d') in 0.013576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000443 seconds.
+  path: Assets/Graphics/candy_110/banana.png
+  artifactKey: Guid(64daf23b42c4c8849a9ed2d8f36f70ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/banana.png using Guid(64daf23b42c4c8849a9ed2d8f36f70ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f952cdd505ca8ecd27e0cb5ea628931') in 0.014337 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000446 seconds.
+  path: Assets/Graphics/candy_110/candy2_yellow_03.png
+  artifactKey: Guid(3b35e448306fba54c9b0aacd301c18e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_yellow_03.png using Guid(3b35e448306fba54c9b0aacd301c18e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bc36ef0a7861167d85c220061285644') in 0.017189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/Graphics/candy_110/candy1_green_01.png
+  artifactKey: Guid(31178a648b1d4e74aab31f1b12e993c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_green_01.png using Guid(31178a648b1d4e74aab31f1b12e993c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb202cfbb1811fe33377bf9bfba733d5') in 0.017350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/Graphics/candy_110/candy2_purple_02.png
+  artifactKey: Guid(b1566e5c2aabff14b838b2d6eaa010d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_purple_02.png using Guid(b1566e5c2aabff14b838b2d6eaa010d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '248c7d30800c2bb1e4ccecf13b4100a9') in 0.011897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/Graphics/candy_110/candy2_red_02.png
+  artifactKey: Guid(79d4ac192313e594a845573d0af1dac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_red_02.png using Guid(79d4ac192313e594a845573d0af1dac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95896c4419b613626da31a1179a9f626') in 0.011518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/Graphics/candy_110/candy3_purple_02.png
+  artifactKey: Guid(80a7fe2ed8f48644b9576ad877c106b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy3_purple_02.png using Guid(80a7fe2ed8f48644b9576ad877c106b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c5174d2db415f0d62618142689f6e83') in 0.011655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/Graphics/candy_110/candy1_purple_03.png
+  artifactKey: Guid(187fd4b28e4c7bb47ba500bec2e916b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_purple_03.png using Guid(187fd4b28e4c7bb47ba500bec2e916b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87d5ef3b6328dbd2da0fad72e7e92a8') in 0.012505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000444 seconds.
+  path: Assets/Graphics/candy_110/candy2_blue_02.png
+  artifactKey: Guid(388bdaf538823dc469b1e44236fd76db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_blue_02.png using Guid(388bdaf538823dc469b1e44236fd76db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6906c02557296e595b20fba744638f19') in 0.018943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000409 seconds.
+  path: Assets/Graphics/candy_110/candy1_green_02.png
+  artifactKey: Guid(6c3ce8fb9a2af7e4c9fecb6a58876a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_green_02.png using Guid(6c3ce8fb9a2af7e4c9fecb6a58876a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1b13cc2755dee3730b2ce86bd7d90d') in 0.013575 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/Graphics/candy_110/box.png
+  artifactKey: Guid(cd198831b51c4a5449e3c9b363e45a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/box.png using Guid(cd198831b51c4a5449e3c9b363e45a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89ea2ce0c2d38f8e22143c51be8bc2b3') in 0.011205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Graphics/candy_110/bubble_pop_frame_02.png
+  artifactKey: Guid(a3158000633be47438f03a05282333a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/bubble_pop_frame_02.png using Guid(a3158000633be47438f03a05282333a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198df316661d8cdb425b51d929050a59') in 0.011547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Graphics/candy_110/candy1_orange_02.png
+  artifactKey: Guid(fd5f5e411511e3a4d8cf936dbb033301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_orange_02.png using Guid(fd5f5e411511e3a4d8cf936dbb033301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a3769ec1e18bd56490c7fec36c2d3a') in 0.010867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000383 seconds.
+  path: Assets/Graphics/candy_110/candy2_purple_01.png
+  artifactKey: Guid(5216a1650ee3ae0489adedfd75823bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_purple_01.png using Guid(5216a1650ee3ae0489adedfd75823bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a333eb00a0e982002f5cf8d3e35ae1e0') in 0.011168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000482 seconds.
+  path: Assets/Graphics/candy_110/candy1_red_01.png
+  artifactKey: Guid(aaccdc8df56f64345983e68352f3c6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_red_01.png using Guid(aaccdc8df56f64345983e68352f3c6be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b6f24f0ac1561bcb68e82f4e7afb34') in 0.011914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000412 seconds.
+  path: Assets/Graphics/candy_110/candy1_yellow_01.png
+  artifactKey: Guid(8d9d26032c946d949a741e51ed74d475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_yellow_01.png using Guid(8d9d26032c946d949a741e51ed74d475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fb18e011227b925d80cd2577e6f7c31') in 0.012426 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/Graphics/candy_110/candy3_purple_01.png
+  artifactKey: Guid(c243ea0c1f20ed4449ccceab2e19a90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy3_purple_01.png using Guid(c243ea0c1f20ed4449ccceab2e19a90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e3b0cfbbbd9a82cff1236a98c9bc4a') in 0.011066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Graphics/candy_110/bubble_pop_frame_03.png
+  artifactKey: Guid(cb32a4ea9def1f94f84a83caa34b396f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/bubble_pop_frame_03.png using Guid(cb32a4ea9def1f94f84a83caa34b396f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e73e27e1687b0dd60a27642a31b4b9e5') in 0.015765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
   path: Assets/Graphics/candy_110/bubble_pop_frame_04.png
   artifactKey: Guid(01861067c04f07a44b26cfa24cab286c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Graphics/candy_110/bubble_pop_frame_04.png using Guid(01861067c04f07a44b26cfa24cab286c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1e7157fd583fb3bdbc7fe3649ccb6a1') in 0.011071 seconds 
+Start importing Assets/Graphics/candy_110/bubble_pop_frame_04.png using Guid(01861067c04f07a44b26cfa24cab286c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78dfa7d59f4e1075998e5ccb2aaac0bd') in 0.014913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/Graphics/candy_110/candy2_green_01.png
+  artifactKey: Guid(917d3e8eb37f57f4f998d2216e4277e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_green_01.png using Guid(917d3e8eb37f57f4f998d2216e4277e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e1dc65220f2dbccfea4192449f2c626') in 0.013881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000486 seconds.
+  path: Assets/Graphics/candy_110/candy1_green_03.png
+  artifactKey: Guid(21e9450abf8b7414785992248c224ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_green_03.png using Guid(21e9450abf8b7414785992248c224ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26ff97752223a488e01841bca5c4139d') in 0.011934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000406 seconds.
+  path: Assets/Graphics/candy_110/candy1_red_02.png
+  artifactKey: Guid(feb31e8c1c04517438c64543230b4d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_red_02.png using Guid(feb31e8c1c04517438c64543230b4d45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35fb36524f5756736e15b2576c857a41') in 0.011672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000516 seconds.
+  path: Assets/Graphics/candy_110/candy2_red_01.png
+  artifactKey: Guid(a3c8d7dd03e97644ba9df096b3a1a108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_red_01.png using Guid(a3c8d7dd03e97644ba9df096b3a1a108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac60f32025fdacc7ed715b0b1f75f843') in 0.011456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000453 seconds.
+  path: Assets/Graphics/candy_110/candy2_purple_03.png
+  artifactKey: Guid(96c9e383c0ca2b94f8960359674e3e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_purple_03.png using Guid(96c9e383c0ca2b94f8960359674e3e92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '151918b0dbebbbb6d2caaa7d89786d86') in 0.010830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000438 seconds.
+  path: Assets/Graphics/candy_110/candy1_red_03.png
+  artifactKey: Guid(7a90a2d4c6a3d424cbf8b5999091a311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_red_03.png using Guid(7a90a2d4c6a3d424cbf8b5999091a311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fdbe02a3a02dda065f4ee565b50cba6') in 0.012468 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000418 seconds.
+  path: Assets/Graphics/candy_110/candy2_red_03.png
+  artifactKey: Guid(8edf9517cb6e90848af23d60d5b9eec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_red_03.png using Guid(8edf9517cb6e90848af23d60d5b9eec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '566ca42b86972d5e8f76d7b95c8f7864') in 0.013102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000456 seconds.
+  path: Assets/Graphics/candy_110/candy1_purple_02.png
+  artifactKey: Guid(71c86ca40a148dc409998b8e03403514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_purple_02.png using Guid(71c86ca40a148dc409998b8e03403514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ded889e5f936b3d99c270990b737f4c') in 0.011867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/Graphics/candy_110/candy2_orange_01.png
+  artifactKey: Guid(e1f628400aab3584f8def954268f3460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_orange_01.png using Guid(e1f628400aab3584f8def954268f3460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '926366df51cd8740e8fcef6b2210bda8') in 0.013201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000481 seconds.
+  path: Assets/Graphics/candy_110/candy2_orange_03.png
+  artifactKey: Guid(5393a4c64127b4c4598a888a5b73636a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_orange_03.png using Guid(5393a4c64127b4c4598a888a5b73636a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a64776d01f293deeeb52cb58fdd8776') in 0.012865 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000449 seconds.
+  path: Assets/Graphics/candy_110/candy2_green_03.png
+  artifactKey: Guid(bfc797c770499d0449150825d9662538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy2_green_03.png using Guid(bfc797c770499d0449150825d9662538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '710ca5fb1399f86c86fb20fd4d4b32d7') in 0.012675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/Graphics/candy_110/candy1_blue_02.png
+  artifactKey: Guid(f0f9d41c84cd23f4aacb29de3ba49c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Graphics/candy_110/candy1_blue_02.png using Guid(f0f9d41c84cd23f4aacb29de3ba49c6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6d659c56858b5578e2910273473fbe0') in 0.013994 seconds 
