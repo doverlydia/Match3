@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelTimer : Level
 {
-    public int timeInSeconds;
+    public float timeInSeconds;
     public int targetScore;
 
     bool timeOut;
@@ -14,13 +14,20 @@ public class LevelTimer : Level
     private void Start()
     {
         type = LevelType.Timer;
-        Debug.Log("time: " + timeInSeconds + " seconds. Target score: " + targetScore);
+
+        hud.SetLevelType(type);
+        hud.SetScore(currentScore);
+        hud.SetTarget(targetScore);
+
+        hud.SetRemaining(string.Format("{0}:{1:00}", Mathf.Max(timeInSeconds / 60), Mathf.Max(timeInSeconds % 60)));
     }
     private void Update()
     {
         if (!timeOut)
         {
             timer += Time.deltaTime;
+
+            hud.SetRemaining(string.Format("{0}:{1:00}", (int)Mathf.Max((timeInSeconds - timer) / 60), (int)Mathf.Max(timeInSeconds - timer) % 60, 0));
 
             if (timeInSeconds - timer <= 0)
             {
