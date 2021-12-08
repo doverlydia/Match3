@@ -194,6 +194,57 @@ public class Grid : MonoBehaviour
                 }
             }
 
+            //traverse vertically if we found a match (for L and T shape)
+            if (horizontalPieces.Count >= 3)
+            {
+                for (int i = 0; i < horizontalPieces.Count; i++)
+                {
+                    for (int dir = 0; dir <= 1; dir++)
+                    {
+                        for (int yOffset = 0; yOffset < yDim; yOffset++)
+                        {
+                            int y;
+                            if (dir == 0) //up
+                            {
+                                y = newY - yOffset;
+                            }
+                            else //down
+                            {
+                                y = newY + yOffset;
+                            }
+
+                            if (y < 0 || y >= yDim) //outside of grid dimension
+                            {
+                                break;
+                            }
+
+                            if (pieces[horizontalPieces[i].X, y].IsColored() && pieces[horizontalPieces[i].X, y].ColorComponent.Color == color)
+                            {
+                                verticalPieces.Add(pieces[horizontalPieces[i].X, y]);
+                            }
+                            else
+                            {
+                                break;
+                            }
+                        }
+                    }
+
+                    if (verticalPieces.Count < 2)
+                    {
+                        verticalPieces.Clear();
+                    }
+                    else
+                    {
+                        for (int j = 0; j < verticalPieces.Count; j++)
+                        {
+                            matchingPieces.Add(verticalPieces[j]);
+                        }
+
+                        break; //found a match, can stop searching and break out of the loop
+                    }
+                }
+            }
+
             if (matchingPieces.Count >= 3)
             {
                 return matchingPieces;
@@ -201,14 +252,16 @@ public class Grid : MonoBehaviour
 
             //didn't find anything going horizontally first
             //now vertical traversal to check for a match
-
+            horizontalPieces.Clear();
+            verticalPieces.Clear();
             verticalPieces.Add(piece);
-            for (int dir = 0; dir <= 1; dir++)
+
+            for (int vertDir = 0; vertDir <= 1; vertDir++)
             {
                 for (int yOffset = 1; yOffset < yDim; yOffset++)
                 {
                     int y;
-                    if (dir == 0)
+                    if (vertDir == 0)
                     {
                         y = newX - yOffset; //up
                     }
@@ -237,6 +290,57 @@ public class Grid : MonoBehaviour
                     for (int i = 0; i < verticalPieces.Count; i++)
                     {
                         matchingPieces.Add(verticalPieces[i]);
+                    }
+                }
+
+                //traverse horizontally if we found a match (for L and T shape)
+                if (verticalPieces.Count >= 3)
+                {
+                    for (int i = 0; i < verticalPieces.Count; i++)
+                    {
+                        for (int horDir = 0; horDir <= 1; horDir++)
+                        {
+                            for (int xOffset = 0; xOffset < xDim; xOffset++)
+                            {
+                                int x;
+                                if (horDir == 0) //left
+                                {
+                                    x = newX - xOffset;
+                                }
+                                else //right
+                                {
+                                    x = newX + xOffset;
+                                }
+
+                                if (x < 0 || x >= xDim) //outside of grid dimension
+                                {
+                                    break;
+                                }
+
+                                if (pieces[x, verticalPieces[i].Y].IsColored() && pieces[x, verticalPieces[i].Y].ColorComponent.Color == color)
+                                {
+                                    horizontalPieces.Add(pieces[x, verticalPieces[i].Y]);
+                                }
+                                else
+                                {
+                                    break;
+                                }
+                            }
+                        }
+
+                        if (horizontalPieces.Count < 2)
+                        {
+                            horizontalPieces.Clear();
+                        }
+                        else
+                        {
+                            for (int j = 0; j < horizontalPieces.Count; j++)
+                            {
+                                matchingPieces.Add(horizontalPieces[j]);
+                            }
+
+                            break; //found a match, can stop searching and break out of the loop
+                        }
                     }
                 }
 
