@@ -245,6 +245,10 @@ MonoBehaviour:
     prefab: {fileID: 1499492735825987427, guid: 659af3522de18b14399d521d33565fe9, type: 3}
   - Type: 2
     prefab: {fileID: 8298937175943585590, guid: d2fb2427493da8c49a3397f14bf6a16d, type: 3}
+  - Type: 3
+    prefab: {fileID: 1368295421348472576, guid: 01af8acd996396b45b17ab84eecd670f, type: 3}
+  - Type: 4
+    prefab: {fileID: 5168527813637727227, guid: d284c64f853cfa9409cf74821de01e5b, type: 3}
   backgroundPrefab: {fileID: 7563724248004882804, guid: 8991cfc13d9bb9342b05c080632e1cc5, type: 3}
 --- !u!4 &1919340440
 Transform:
