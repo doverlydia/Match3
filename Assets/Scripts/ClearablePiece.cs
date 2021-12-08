@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class ClearablePiece : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private bool isBeingCleared = false;
+    public bool IsBeingCleared => isBeingCleared;
+    
+    public AnimationClip clearAnimation;
+
+    protected GamePiece piece;
+
+    private void Awake()
     {
-        
+        piece = GetComponent<GamePiece>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Clear()
     {
-        
+        isBeingCleared = true;
+        StartCoroutine(ClearCoroutine());
+    }
+
+    private IEnumerator ClearCoroutine()
+    {
+        Animator animator = GetComponent<Animator>();
+        if (animator)
+        {
+            animator.Play(clearAnimation.name);
+            yield return new WaitForSeconds(clearAnimation.length);
+            Destroy(gameObject);
+        }
     }
 }
