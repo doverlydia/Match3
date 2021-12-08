@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 5673973472943119947}
   - component: {fileID: 8955665263363875581}
   - component: {fileID: 9210812537730746293}
-  - component: {fileID: 2633357614258890862}
   - component: {fileID: 190156279153242836}
   - component: {fileID: 973588124711701107}
   - component: {fileID: 5168527813637727224}
+  - component: {fileID: 2178589276402516088}
   m_Layer: 0
   m_Name: ColumnClearPiece
   m_TagString: Untagged
@@ -61,19 +61,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bcf9fcee9de0e1428b7fe0f9e890ca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2633357614258890862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5168527813637727227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 003a8baf365655c4486c3ccfa3391d47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clearAnimation: {fileID: 7400000, guid: 12f2baeae3b9854498c23294ba9f1131, type: 2}
 --- !u!114 &190156279153242836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,6 +131,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2178589276402516088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5168527813637727227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1affb1f87a7c6c40952de737ce2f6b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clearAnimation: {fileID: 7400000, guid: 12f2baeae3b9854498c23294ba9f1131, type: 2}
+  isRow: 0
 --- !u!1 &6678788494539273149
 GameObject:
   m_ObjectHideFlags: 0

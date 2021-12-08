@@ -9,6 +9,7 @@ public enum PieceType
     Bubble,
     RowClear,
     ColumnClear,
+    Rainbow,
     Count
 }
 
@@ -117,13 +118,33 @@ public class Grid : MonoBehaviour
             pieces[piece1.X, piece1.Y] = piece2;
             pieces[piece2.X, piece2.Y] = piece1;
 
-            if (GetMatch(piece1, piece2.X, piece2.Y) != null || GetMatch(piece2, piece1.X, piece1.Y) != null)
+            if (GetMatch(piece1, piece2.X, piece2.Y) != null || GetMatch(piece2, piece1.X, piece1.Y) != null || piece1.Type == PieceType.Rainbow || piece2.Type == PieceType.Rainbow)
             {
                 int piece1X = piece1.X;
                 int piece1Y = piece1.Y;
 
                 piece1.MovableComponent.Move(piece2.X, piece2.Y, fillTime);
                 piece2.MovableComponent.Move(piece1X, piece1Y, fillTime);
+
+                if (piece1.Type == PieceType.Rainbow && piece1.IsClearable() && piece2.IsColored())
+                {
+                    ClearColorPiece clearColor = piece1.GetComponent<ClearColorPiece>();
+                    if (clearColor)
+                    {
+                        clearColor.Color = piece2.ColorComponent.Color;
+                    }
+                    ClearPiece(piece1.X, piece1.Y);
+                }
+
+                if (piece2.Type == PieceType.Rainbow && piece2.IsClearable() && piece1.IsColored())
+                {
+                    ClearColorPiece clearColor = piece2.GetComponent<ClearColorPiece>();
+                    if (clearColor)
+                    {
+                        clearColor.Color = piece1.ColorComponent.Color;
+                    }
+                    ClearPiece(piece2.X, piece2.Y);
+                }
 
                 ClearAllValidMatches();
 
@@ -242,6 +263,10 @@ public class Grid : MonoBehaviour
                                 specialPieceType = PieceType.ColumnClear;
                             }
                         }
+                        else if (match.Count >= 5)
+                        {
+                            specialPieceType = PieceType.Rainbow;
+                        }
 
                         for (int i = 0; i < match.Count; i++)
                         {
@@ -265,6 +290,10 @@ public class Grid : MonoBehaviour
                             if ((specialPieceType == PieceType.RowClear || specialPieceType == PieceType.ColumnClear) && newPiece.IsColored() && match[0].IsColored())
                             {
                                 newPiece.ColorComponent.SetColor(match[0].ColorComponent.Color);
+                            }
+                            else if (specialPieceType == PieceType.Rainbow && newPiece.IsColored())
+                            {
+                                newPiece.ColorComponent.SetColor(ColorType.Any);
                             }
                         }
 
@@ -607,5 +636,33 @@ public class Grid : MonoBehaviour
         }
 
         return null;
+    }
+
+    public void ClearRow(int row)
+    {
+        for (int x = 0; x < xDim; x++)
+        {
+            ClearPiece(x, row);
+        }
+    }
+    public void CleanColumn(int column)
+    {
+        for (int y = 0; y < yDim; y++)
+        {
+            ClearPiece(column, y);
+        }
+    }
+    public void ClearColor(ColorType color)
+    {
+        for (int x = 0; x < xDim; x++)
+        {
+            for (int y = 0; y < yDim; y++)
+            {
+                if (pieces[x, y].IsColored() && pieces[x, y].ColorComponent.Color == color || color == ColorType.Any)
+                {
+                    ClearPiece(x, y);
+                }
+            }
+        }
     }
 }
