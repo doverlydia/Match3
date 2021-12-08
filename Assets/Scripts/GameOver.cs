@@ -13,6 +13,7 @@ public class GameOver : MonoBehaviour
     public GameObject scoreParent;
     public GameObject loseParent;
     public GameObject winParent;
+    public GameObject game;
 
     public TMP_Text score;
     public GameObject[] stars;
@@ -27,10 +28,12 @@ public class GameOver : MonoBehaviour
         loseParent.SetActive(false);
         winParent.SetActive(false);
         screenParent.SetActive(false);
+        game.SetActive(true);
     }
 
     public void ShowLose(int _score, int starCount)
     {
+        game.SetActive(false);
         screenParent.SetActive(true);
         winParent.SetActive(false);
         loseParent.SetActive(true);
@@ -47,6 +50,7 @@ public class GameOver : MonoBehaviour
 
     public void ShowWin(int _score, int starCount)
     {
+        game.SetActive(false);
         screenParent.SetActive(true);
         loseParent.SetActive(false);
         winParent.SetActive(true);
