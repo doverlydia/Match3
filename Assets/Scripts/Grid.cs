@@ -18,14 +18,23 @@ public struct PiecePrefab
 {
     public PieceType Type;
     public GameObject prefab;
-}
+};
+[System.Serializable]
+public struct PiecePosition
+{
+    public PieceType type;
+    public int x;
+    public int y;
+};
 
 public class Grid : MonoBehaviour
 {
     private Dictionary<PieceType, GameObject> PiecePrefabDict;
     private GamePiece[,] pieces;
+    public GamePiece[,] Pieces => pieces;
 
     private bool inverse = false;
+    private bool gameOver = false;
 
     private GamePiece pressedPiece;
     private GamePiece enteredPiece;
@@ -36,10 +45,12 @@ public class Grid : MonoBehaviour
     public float fillTime;
 
     public PiecePrefab[] piecePrefabs;
+    public PiecePosition[] initialPieces;
+
     public GameObject backgroundPrefab;
+    public Level level;
 
-
-    void Start()
+    private void Awake()
     {
         PiecePrefabDict = new Dictionary<PieceType, GameObject>();
 
@@ -61,34 +72,24 @@ public class Grid : MonoBehaviour
 
         pieces = new GamePiece[xDim, yDim];
 
+        for (int i = 0; i < initialPieces.Length; i++)
+        {
+            if (initialPieces[i].x >= 0 && initialPieces[i].x < xDim && initialPieces[i].y >= 0 && initialPieces[i].y < yDim)
+            {
+                SpawnNewPiece(initialPieces[i].x, initialPieces[i].y, initialPieces[i].type);
+            }
+        }
+
         for (int x = 0; x < xDim; x++)
         {
             for (int y = 0; y < yDim; y++)
             {
-                SpawnNewPiece(x, y, PieceType.Empty);
+                if (pieces[x, y] == null)
+                    SpawnNewPiece(x, y, PieceType.Empty);
             }
         }
 
-        Destroy(pieces[1, 4].gameObject);
-        SpawnNewPiece(1, 4, PieceType.Bubble);
 
-        Destroy(pieces[2, 4].gameObject);
-        SpawnNewPiece(2, 4, PieceType.Bubble);
-
-        Destroy(pieces[3, 4].gameObject);
-        SpawnNewPiece(3, 4, PieceType.Bubble);
-
-        Destroy(pieces[5, 4].gameObject);
-        SpawnNewPiece(5, 4, PieceType.Bubble);
-
-        Destroy(pieces[6, 4].gameObject);
-        SpawnNewPiece(6, 4, PieceType.Bubble);
-
-        Destroy(pieces[7, 4].gameObject);
-        SpawnNewPiece(7, 4, PieceType.Bubble);
-
-        Destroy(pieces[4, 0].gameObject);
-        SpawnNewPiece(4, 0, PieceType.Bubble);
 
         StartCoroutine(Fill());
     }
@@ -113,6 +114,11 @@ public class Grid : MonoBehaviour
 
     public void SwapPieces(GamePiece piece1, GamePiece piece2)
     {
+        if (gameOver)
+        {
+            return;
+        }
+
         if (piece1.IsMovable() && piece2.IsMovable())
         {
             pieces[piece1.X, piece1.Y] = piece2;
@@ -162,6 +168,7 @@ public class Grid : MonoBehaviour
                 enteredPiece = null;
 
                 StartCoroutine(Fill());
+                level.OnMove();
             }
             else
             {
@@ -664,5 +671,24 @@ public class Grid : MonoBehaviour
                 }
             }
         }
+    }
+    public void GameOver()
+    {
+        gameOver = true;
+    }
+    public List<GamePiece> GetPiecesOfType(PieceType type)
+    {
+        List<GamePiece> piecesOfType = new List<GamePiece>();
+        for (int x = 0; x < xDim; x++)
+        {
+            for (int y = 0; y < yDim; y++)
+            {
+                if (pieces[x, y].Type == type)
+                {
+                    piecesOfType.Add(pieces[x, y]);
+                }
+            }
+        }
+        return piecesOfType;
     }
 }

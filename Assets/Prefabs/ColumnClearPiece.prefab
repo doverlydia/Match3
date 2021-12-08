@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5673973472943119947}
+  - component: {fileID: 8860429696773488406}
   - component: {fileID: 8955665263363875581}
   - component: {fileID: 9210812537730746293}
   - component: {fileID: 190156279153242836}
@@ -22,7 +22,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5673973472943119947
+--- !u!4 &8860429696773488406
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -33,7 +33,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8127070939222049253}
+  - {fileID: 862673695382163282}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba49b6e99985e204ca804c7998b38606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 600
 --- !u!114 &9210812537730746293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,7 +154,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8127070939222049253}
+  - component: {fileID: 862673695382163282}
   - component: {fileID: 566803220222054514}
   m_Layer: 0
   m_Name: piece
@@ -162,7 +163,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8127070939222049253
+--- !u!4 &862673695382163282
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,7 +174,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 5673973472943119947}
+  m_Father: {fileID: 8860429696773488406}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &566803220222054514
